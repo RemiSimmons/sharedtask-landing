@@ -124,9 +124,9 @@ export default function LandingPage() {
           {/* Right Side - Before/After Visual */}
           <div className="relative h-96 md:h-[500px]">
             {/* Chaos Side */}
-            <div className="absolute left-0 top-0 w-1/2 h-full p-4 overflow-hidden flex flex-col">
-              <div className="text-sm font-semibold text-gray-700 mb-3">Before</div>
-              <div className="flex-1 relative flex flex-col justify-between py-2">
+            <div className="absolute left-0 top-0 w-1/2 h-full p-2 md:p-4 overflow-hidden flex flex-col">
+              <div className="text-xs md:text-sm font-semibold text-gray-700 mb-2 md:mb-3">Before</div>
+              <div className="flex-1 relative flex flex-col gap-1.5 md:justify-between md:gap-0 py-1 md:py-2">
                 {[
                   "Who's bringing plates?",
                   "Wait—what time?",
@@ -138,7 +138,7 @@ export default function LandingPage() {
                 ].map((text, i) => (
                   <div
                     key={i}
-                    className="bg-gray-300 rounded-2xl p-3 shadow-sm transform text-xs"
+                    className="bg-gray-300 rounded-2xl p-2 md:p-3 shadow-sm transform text-xs leading-tight"
                     style={{
                       transform: `rotate(${(i % 3 - 1) * 5}deg) translateX(${(i % 2) * 10}px)`,
                       backgroundColor: ['#E5E7EB', '#D1D5DB', '#9CA3AF'][i % 3],
@@ -149,15 +149,15 @@ export default function LandingPage() {
                   </div>
                 ))}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="text-6xl animate-pulse">😰</div>
+                  <div className="text-4xl md:text-6xl animate-pulse">😰</div>
                 </div>
               </div>
             </div>
 
             {/* Clean Side */}
-            <div className="absolute right-0 top-0 w-1/2 h-full p-4 flex flex-col">
-              <div className="text-sm font-semibold text-gray-700 mb-3">After</div>
-              <div className="flex-1 relative flex flex-col justify-between py-2">
+            <div className="absolute right-0 top-0 w-1/2 h-full p-2 md:p-4 flex flex-col">
+              <div className="text-xs md:text-sm font-semibold text-gray-700 mb-2 md:mb-3">After</div>
+              <div className="flex-1 relative flex flex-col gap-1.5 md:justify-between md:gap-0 py-1 md:py-2">
                 {[
                   { task: "Bring plates", claimed: "Sarah" },
                   { task: "Bring cups", claimed: "Mike" },
@@ -169,31 +169,31 @@ export default function LandingPage() {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className={`rounded-xl p-2.5 shadow-sm flex items-start border-2 ${
+                    className={`rounded-lg md:rounded-xl p-2 md:p-2.5 shadow-sm flex items-start border-2 ${
                       item.claimed 
                         ? 'bg-teal-50 border-teal-200' 
                         : 'bg-white border-gray-200'
                     }`}
                   >
-                    <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mr-2 mt-0.5 ${
+                    <div className={`w-4 h-4 md:w-5 md:h-5 rounded-full flex items-center justify-center flex-shrink-0 mr-1.5 md:mr-2 mt-0.5 ${
                       item.claimed 
                         ? 'bg-teal-500' 
                         : 'bg-gray-200'
                     }`}>
                       {item.claimed && (
-                        <Check className="w-3 h-3 text-white" strokeWidth={3} />
+                        <Check className="w-2.5 h-2.5 md:w-3 md:h-3 text-white" strokeWidth={3} />
                       )}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="text-xs font-bold text-gray-900">{item.task}</div>
+                      <div className="text-xs font-bold text-gray-900 leading-tight">{item.task}</div>
                       {item.claimed && (
-                        <div className="text-xs text-teal-600">Claimed by {item.claimed}</div>
+                        <div className="text-xs text-teal-600 leading-tight">Claimed by {item.claimed}</div>
                       )}
                     </div>
                   </div>
                 ))}
-                <div className="absolute -bottom-2 right-4 pointer-events-none">
-                  <div className="text-3xl">✨</div>
+                <div className="absolute -bottom-1 md:-bottom-2 right-2 md:right-4 pointer-events-none">
+                  <div className="text-2xl md:text-3xl">✨</div>
                 </div>
               </div>
             </div>
