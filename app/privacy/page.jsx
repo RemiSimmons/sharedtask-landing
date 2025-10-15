@@ -34,7 +34,7 @@ export default function PrivacyPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h3>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  <strong>Basic usage data:</strong> We store only what's necessary to run your projects 
+                  <strong>Basic usage data:</strong> We store only what&apos;s necessary to run your projects 
                   (lists, tasks, and participant actions).
                 </li>
                 <li>

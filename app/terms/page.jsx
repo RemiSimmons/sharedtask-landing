@@ -108,7 +108,7 @@ export default function TermsPage() {
 
             <div className="mt-12 pt-8 border-t-2 border-gray-200">
               <p className="text-lg">
-                Thank you for using SharedTask.ai — we're glad to help make group planning a little easier for everyone.
+                Thank you for using SharedTask.ai — we&apos;re glad to help make group planning a little easier for everyone.
               </p>
             </div>
           </div>

@@ -128,13 +128,13 @@ export default function LandingPage() {
               <div className="text-sm font-semibold text-gray-700 mb-3">Before</div>
               <div className="space-y-2 relative">
                 {[
-                  "Who's bringing plates?",
+                  "Who&apos;s bringing plates?",
                   "Wait—what time?",
                   "I thought John was doing that",
                   "Can someone bring cups too?",
                   "Did anyone get napkins?",
                   "Should I bring my kids?",
-                  "What's the address again?",
+                  "What&apos;s the address again?",
                   "Is this still happening?",
                   "Sorry, just seeing this!"
                 ].map((text, i) => (
@@ -340,12 +340,12 @@ export default function LandingPage() {
       >
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 text-gray-900">
-            We've Been There
+            We&apos;ve Been There
           </h2>
           
           <div className="bg-gradient-to-br from-blue-50 to-orange-50 rounded-3xl p-10 mb-12 shadow-md">
             <p className="text-xl text-gray-700 leading-relaxed mb-4">
-              We've organized theater performances, volunteer outreach, countless potlucks, and family reunions. Whether for business, hobby, or personal gatherings, we kept hitting the same frustrations. So we built the tool we wished we had.
+              We&apos;ve organized theater performances, volunteer outreach, countless potlucks, and family reunions. Whether for business, hobby, or personal gatherings, we kept hitting the same frustrations. So we built the tool we wished we had.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
               No more chasing RSVPs. No more duplicate dishes. No more stress. Just simple, organized events that actually work.

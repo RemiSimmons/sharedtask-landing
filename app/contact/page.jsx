@@ -155,7 +155,7 @@ export default function ContactPage() {
                     required
                     rows={6}
                     className="w-full px-6 py-4 text-lg border-2 border-gray-200 rounded-2xl focus:border-primary focus:outline-none transition-colors resize-none"
-                    placeholder="Tell us what's on your mind..."
+                    placeholder="Tell us what&apos;s on your mind..."
                   />
                 </div>
 

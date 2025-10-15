@@ -33,7 +33,7 @@ export default function AboutPage() {
           <div className="bg-white rounded-3xl shadow-xl p-12 mb-12">
             <div className="text-xl text-gray-700 leading-relaxed space-y-6">
               <p>
-                SharedTask.ai was created by people who've lived through the frustration of messy group chats, forgotten details, and last minute confusion when planning get togethers. From family reunions to volunteer events, we realized everyone was using a dozen messages to do something that should take two clicks.
+                SharedTask.ai was created by people who&apos;ve lived through the frustration of messy group chats, forgotten details, and last minute confusion when planning get togethers. From family reunions to volunteer events, we realized everyone was using a dozen messages to do something that should take two clicks.
               </p>
               
               <p className="text-2xl font-semibold text-gray-900">
@@ -41,7 +41,7 @@ export default function AboutPage() {
               </p>
               
               <p>
-                With SharedTask, you can create a list of what's needed, share one link, and let friends, family, or coworkers claim tasks instantly — no app installs or sign ups required. Everything updates in real time.
+                With SharedTask, you can create a list of what&apos;s needed, share one link, and let friends, family, or coworkers claim tasks instantly — no app installs or sign ups required. Everything updates in real time.
               </p>
               
               <p>
