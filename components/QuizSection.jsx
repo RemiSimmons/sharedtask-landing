@@ -10,7 +10,7 @@ const questions = [
     options: [
       { text: "Just 1-2 special occasions", points: 1 },
       { text: "3-5 regular gatherings", points: 2 },
-      { text: "6+ (I&apos;m always hosting!)", points: 3 }
+      { text: "6+ (I'm always hosting!)", points: 3 }
     ]
   },
   {
@@ -107,7 +107,7 @@ export default function QuizSection() {
       return {
         tier: 'Basic',
         color: 'accent',
-        description: "You&apos;re a regular host managing multiple events throughout the year. Basic tier keeps your gatherings organized without breaking the bank.",
+        description: "You're a regular host managing multiple events throughout the year. Basic tier keeps your gatherings organized without breaking the bank.",
         features: [
           "5 active projects",
           "Unlimited participants",
@@ -119,7 +119,7 @@ export default function QuizSection() {
       return {
         tier: 'Pro',
         color: 'purple-600',
-        description: "You&apos;re a power host juggling multiple large events! Start with our Basic tier today, and we&apos;ll notify you the moment Pro launches with advanced features built just for hosts like you.",
+        description: "You're a power host juggling multiple large events! Start with our Basic tier today, and we'll notify you the moment Pro launches with advanced features built just for hosts like you.",
         features: [
           "10+ active projects",
           "Password protection",
@@ -144,7 +144,7 @@ export default function QuizSection() {
           
           <div className="bg-white rounded-3xl shadow-xl p-12 text-center animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-              You&apos;re a <span className={`text-${results.color}`}>{results.tier}</span> Tier Host!
+              You're a <span className={`text-${results.color}`}>{results.tier}</span> Tier Host!
             </h2>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -166,7 +166,7 @@ export default function QuizSection() {
             </div>
             
             <a 
-              href="https://app.sharedtask.ai/signup"
+              href="https://app.sharedtask.ai/auth/signup"
               className="bg-primary text-white px-10 py-5 rounded-full text-xl font-semibold hover:scale-105 hover:shadow-2xl transition-all duration-200 mb-4 inline-block"
             >
               {results.tier === 'Pro' ? 'Start with Basic (14-Day Free Trial)' : 'Start Your 14-Day Free Trial'}

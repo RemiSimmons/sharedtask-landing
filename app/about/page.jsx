@@ -97,7 +97,7 @@ export default function AboutPage() {
               Join thousands of hosts who've made their events easier
             </p>
             <a
-              href="https://app.sharedtask.ai/signup"
+              href="https://app.sharedtask.ai/auth/signup"
               className="bg-white text-primary px-10 py-5 rounded-full text-xl font-semibold hover:scale-105 hover:shadow-2xl transition-all duration-200 inline-block"
             >
               Try Free for 14 Days

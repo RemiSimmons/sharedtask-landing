@@ -62,13 +62,13 @@ export default function LandingPage() {
           </div>
           <div className="flex items-center gap-4">
             <a 
-              href="https://app.sharedtask.ai/login"
+              href="https://app.sharedtask.ai/auth/signin"
               className="text-gray-700 hover:text-primary font-semibold transition-colors py-2"
             >
               Sign In
             </a>
             <a 
-              href="https://app.sharedtask.ai/signup"
+              href="https://app.sharedtask.ai/auth/signup"
               className="bg-primary text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition-all hover:scale-105 flex items-center"
             >
               Try Free
@@ -106,7 +106,7 @@ export default function LandingPage() {
             {/* CTA Button and Social Proof */}
             <div className="flex flex-col gap-3 pt-4">
               <a
-                href="https://app.sharedtask.ai/signup"
+                href="https://app.sharedtask.ai/auth/signup"
                 className="bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 text-center self-start"
                 aria-label="Try SharedTask free for 14 days"
               >
@@ -124,19 +124,17 @@ export default function LandingPage() {
           {/* Right Side - Before/After Visual */}
           <div className="relative h-96 md:h-[500px]">
             {/* Chaos Side */}
-            <div className="absolute left-0 top-0 w-1/2 h-full p-4 overflow-hidden">
+            <div className="absolute left-0 top-0 w-1/2 h-full p-4 overflow-hidden flex flex-col">
               <div className="text-sm font-semibold text-gray-700 mb-3">Before</div>
-              <div className="space-y-2 relative">
+              <div className="flex-1 relative flex flex-col justify-between py-2">
                 {[
-                  "Who&apos;s bringing plates?",
+                  "Who's bringing plates?",
                   "Wait—what time?",
                   "I thought John was doing that",
                   "Can someone bring cups too?",
                   "Did anyone get napkins?",
-                  "Should I bring my kids?",
-                  "What&apos;s the address again?",
-                  "Is this still happening?",
-                  "Sorry, just seeing this!"
+                  "What's the address?",
+                  "Is this still happening?"
                 ].map((text, i) => (
                   <div
                     key={i}
@@ -150,16 +148,16 @@ export default function LandingPage() {
                     <div className="text-gray-700 font-medium">{text}</div>
                   </div>
                 ))}
-                <div className="absolute inset-0 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div className="text-6xl animate-pulse">😰</div>
                 </div>
               </div>
             </div>
 
             {/* Clean Side */}
-            <div className="absolute right-0 top-0 w-1/2 h-full p-4">
+            <div className="absolute right-0 top-0 w-1/2 h-full p-4 flex flex-col">
               <div className="text-sm font-semibold text-gray-700 mb-3">After</div>
-              <div className="space-y-2 relative">
+              <div className="flex-1 relative flex flex-col justify-between py-2">
                 {[
                   { task: "Bring plates", claimed: "Sarah" },
                   { task: "Bring cups", claimed: "Mike" },
@@ -194,7 +192,7 @@ export default function LandingPage() {
                     </div>
                   </div>
                 ))}
-                <div className="absolute -bottom-2 right-4">
+                <div className="absolute -bottom-2 right-4 pointer-events-none">
                   <div className="text-3xl">✨</div>
                 </div>
               </div>
@@ -406,7 +404,7 @@ export default function LandingPage() {
               ctaText="Start Free"
               ctaStyle="secondary"
               subtext="No credit card required"
-              ctaLink="https://app.sharedtask.ai/signup"
+              ctaLink="https://app.sharedtask.ai/auth/signup"
             />
 
             <PricingCard
@@ -423,7 +421,7 @@ export default function LandingPage() {
               ctaText="Try Free for 14 Days"
               ctaStyle="primary"
               isPopular={true}
-              ctaLink="https://app.sharedtask.ai/signup"
+              ctaLink="https://app.sharedtask.ai/auth/signup"
             />
 
             <PricingCard
@@ -463,7 +461,7 @@ export default function LandingPage() {
             Your next event could be your easiest one yet
           </p>
           <a 
-            href="https://app.sharedtask.ai/signup"
+            href="https://app.sharedtask.ai/auth/signup"
             className="bg-white text-primary px-12 py-6 rounded-full text-2xl font-semibold hover:scale-105 hover:shadow-2xl transition-all duration-200 inline-block mb-6"
             aria-label="Try SharedTask free for 14 days"
           >
