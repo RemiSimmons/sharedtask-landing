@@ -81,5 +81,23 @@ button, a {
   min-height: 44px;
 }
 
+/* Chaos message transforms - apply on all screen sizes */
+.chaos-msg-0 { transform: rotate(-5deg) translateX(0px); }
+.chaos-msg-1 { transform: rotate(0deg) translateX(5px); }
+.chaos-msg-2 { transform: rotate(5deg) translateX(0px); }
+.chaos-msg-3 { transform: rotate(-5deg) translateX(5px); }
+.chaos-msg-4 { transform: rotate(0deg) translateX(0px); }
+.chaos-msg-5 { transform: rotate(5deg) translateX(5px); }
+.chaos-msg-6 { transform: rotate(-5deg) translateX(0px); }
+
+/* Larger transforms on desktop */
+@media (min-width: 768px) {
+  .chaos-msg-1 { transform: rotate(0deg) translateX(10px); }
+  .chaos-msg-3 { transform: rotate(-5deg) translateX(10px); }
+  .chaos-msg-5 { transform: rotate(5deg) translateX(10px); }
+}
+
+
+
 
 

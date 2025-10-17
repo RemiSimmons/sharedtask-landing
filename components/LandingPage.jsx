@@ -78,7 +78,7 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="hero-section py-16 px-4 bg-gradient-to-br from-blue-50 via-white to-orange-50">
+      <section id="hero" className="hero-section py-16 px-4 pb-8 bg-gradient-to-br from-blue-50 via-white to-orange-50">
         {/* Product Category */}
         <p className="text-primary uppercase text-2xl font-semibold tracking-wide text-center mb-12">
           Hosting Group Activities
@@ -87,7 +87,7 @@ export default function LandingPage() {
         {/* Text and Visual Side by Side */}
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Left Side - Text Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 text-center md:text-left">
             {/* Main Headline */}
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
               Stop the Group<br />Text Chaos
@@ -104,10 +104,10 @@ export default function LandingPage() {
             </p>
 
             {/* CTA Button and Social Proof */}
-            <div className="flex flex-col gap-3 pt-4">
+            <div className="flex flex-col gap-3 pt-4 items-center md:items-start">
               <a
                 href="https://app.sharedtask.ai/auth/signup"
-                className="bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 text-center self-start"
+                className="bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 text-center"
                 aria-label="Try SharedTask free for 14 days"
               >
                 Try Free for 14 Days (No Credit Card)
@@ -124,9 +124,9 @@ export default function LandingPage() {
           {/* Right Side - Before/After Visual */}
           <div className="relative h-96 md:h-[500px]">
             {/* Chaos Side */}
-            <div className="absolute left-0 top-0 w-1/2 h-full p-2 md:p-4 overflow-hidden flex flex-col">
+            <div className="absolute left-0 top-0 w-1/2 h-full p-2 md:p-4 flex flex-col">
               <div className="text-xs md:text-sm font-semibold text-gray-700 mb-2 md:mb-3">Before</div>
-              <div className="flex-1 relative flex flex-col gap-1.5 md:justify-between md:gap-0 py-1 md:py-2">
+              <div className="flex-1 relative flex flex-col justify-between overflow-hidden py-1 md:py-2">
                 {[
                   "Who's bringing plates?",
                   "Wait—what time?",
@@ -138,11 +138,10 @@ export default function LandingPage() {
                 ].map((text, i) => (
                   <div
                     key={i}
-                    className="bg-gray-300 rounded-2xl p-2 md:p-3 shadow-sm transform text-xs leading-tight"
+                    className={`bg-gray-300 rounded-2xl p-2 md:p-3 shadow-sm text-xs leading-tight chaos-msg-${i}`}
                     style={{
-                      transform: `rotate(${(i % 3 - 1) * 5}deg) translateX(${(i % 2) * 10}px)`,
                       backgroundColor: ['#E5E7EB', '#D1D5DB', '#9CA3AF'][i % 3],
-                      opacity: 0.7 + (i % 3) * 0.1,
+                      opacity: 0.7 + (i % 3) * 0.1
                     }}
                   >
                     <div className="text-gray-700 font-medium">{text}</div>
@@ -157,7 +156,7 @@ export default function LandingPage() {
             {/* Clean Side */}
             <div className="absolute right-0 top-0 w-1/2 h-full p-2 md:p-4 flex flex-col">
               <div className="text-xs md:text-sm font-semibold text-gray-700 mb-2 md:mb-3">After</div>
-              <div className="flex-1 relative flex flex-col gap-1.5 md:justify-between md:gap-0 py-1 md:py-2">
+              <div className="flex-1 relative flex flex-col justify-between py-1 md:py-2">
                 {[
                   { task: "Bring plates", claimed: "Sarah" },
                   { task: "Bring cups", claimed: "Mike" },
@@ -213,7 +212,7 @@ export default function LandingPage() {
       {/* Pain Points Section */}
       <section 
         id="pain-points" 
-        className={`py-16 px-6 bg-white transition-opacity duration-1000 ${
+        className={`pt-8 pb-16 px-6 bg-white transition-opacity duration-1000 ${
           isVisible['pain-points'] ? 'animate-fade-in' : 'opacity-0'
         }`}
       >
