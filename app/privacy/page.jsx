@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata = {
-  title: 'Privacy Policy - SharedTask.ai',
-  description: 'Privacy Policy for SharedTask.ai',
+  title: 'Privacy Policy - How SharedTask Protects Your Data',
+  description: 'SharedTask respects your privacy. Learn how we collect, use, and protect your data. No invasive tracking, no selling personal information. Simple, transparent privacy practices.',
 };
 
 export default function PrivacyPage() {
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
             </p>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
                   <strong>Basic usage data:</strong> We store only what&apos;s necessary to run your projects 
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">2. How We Use Information</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">2. How We Use Information</h2>
               <p>We use limited data to:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Operate and improve the SharedTask platform.</li>
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">3. Data Security</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Data Security</h2>
               <p>
                 All data is transmitted using secure HTTPS encryption. Access to internal systems is 
                 limited to authorized team members only.
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">4. Third-Party Services</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Third-Party Services</h2>
               <p>
                 We may use trusted third-party providers (such as analytics tools or email systems) to support operations. 
                 These partners are required to keep your data secure and confidential.
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">5. Your Choices</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Your Choices</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>You can delete your projects at any time.</li>
                 <li>You can unsubscribe from emails instantly through any message we send.</li>
@@ -82,7 +82,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">6. Contact Us</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Contact Us</h2>
               <p>
                 If you have questions about privacy or data handling, email{' '}
                 <a href="mailto:support@sharedtask.ai" className="text-primary hover:underline font-semibold">

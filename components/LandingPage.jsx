@@ -56,7 +56,7 @@ export default function LandingPage() {
           <div className="flex items-center">
             <img 
               src="/logo.png" 
-              alt="SharedTask.ai" 
+              alt="SharedTask logo - Simple event planning and task coordination" 
               className="h-24 md:h-36"
             />
           </div>
@@ -315,7 +315,7 @@ export default function LandingPage() {
             <div className="relative bg-gray-900 rounded-3xl overflow-hidden shadow-2xl border-4 border-primary" style={{ aspectRatio: '16/9' }}>
               <iframe
                 src="https://www.youtube.com/embed/XYxnlXS-vX8?loop=1&playlist=XYxnlXS-vX8"
-                title="SharedTask.ai Demo Video"
+                title="SharedTask demo showing how to organize events with one shareable link"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="absolute inset-0 w-full h-full"
@@ -475,6 +475,113 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section 
+        id="faq" 
+        className={`py-16 px-6 bg-white transition-opacity duration-1000 ${
+          isVisible['faq'] ? 'animate-fade-in' : 'opacity-0'
+        }`}
+      >
+        {/* FAQPage Schema */}
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Do I need to create an account to use SharedTask?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, but you can start with our free plan. Invited participants don't need accounts to view or update tasks."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What's the difference between the plans?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Free is perfect for events with 10 or fewer people. Basic ($2.99/month) is perfect for 10+ participants. Pro ($9.99/month) for events with 25+ people or if you need advanced features like unlimited participants."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I cancel anytime?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. No commitments, cancel anytime. Your data stays safe."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How is this different from a group chat?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "SharedTask prevents the chaos of 67 unread messages, makes it easy to locate who said what without scrolling through disorganized conversations, and eliminates duplicate assignments and forgotten tasks. Everything is organized in one place with clear ownership."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What happens after my 14-day Pro trial?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You'll automatically downgrade to our free plan. No credit card required for trial."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What types of events work best with SharedTask?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Group activities like volunteer projects, family reunions, camping trips, potlucks, fundraisers, church events, team offsites, block parties, and any gathering where multiple people need to coordinate tasks."
+                  }
+                }
+              ]
+            })
+          }}
+        />
+        
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
+            Frequently Asked Questions
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-md border border-gray-100">
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Do I need to create an account to use SharedTask?</h3>
+              <p className="text-lg text-gray-600">Yes, but you can start with our free plan. Invited participants don't need accounts to view or update tasks.</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-md border border-gray-100">
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">What's the difference between the plans?</h3>
+              <p className="text-lg text-gray-600">Free is perfect for events with 10 or fewer people. Basic ($2.99/month) is perfect for 10+ participants. Pro ($9.99/month) for events with 25+ people or if you need advanced features like unlimited participants.</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-md border border-gray-100">
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Can I cancel anytime?</h3>
+              <p className="text-lg text-gray-600">Absolutely. No commitments, cancel anytime. Your data stays safe.</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-md border border-gray-100">
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">How is this different from a group chat?</h3>
+              <p className="text-lg text-gray-600">SharedTask prevents the chaos of 67 unread messages, makes it easy to locate who said what without scrolling through disorganized conversations, and eliminates duplicate assignments and forgotten tasks. Everything is organized in one place with clear ownership.</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-md border border-gray-100">
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">What happens after my 14-day Pro trial?</h3>
+              <p className="text-lg text-gray-600">You'll automatically downgrade to our free plan. No credit card required for trial.</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-md border border-gray-100">
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">What types of events work best with SharedTask?</h3>
+              <p className="text-lg text-gray-600">Group activities like volunteer projects, family reunions, camping trips, potlucks, fundraisers, church events, team offsites, block parties, and any gathering where multiple people need to coordinate tasks.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-6">
         <div className="max-w-6xl mx-auto">
@@ -482,17 +589,23 @@ export default function LandingPage() {
             <div className="flex items-center justify-center mb-4">
               <img 
                 src="/logo.png" 
-                alt="SharedTask.ai" 
+                alt="SharedTask logo - Group planning made simple" 
                 className="h-20 md:h-36"
               />
             </div>
             <p className="text-lg text-gray-400">Group planning, finally made simple</p>
           </div>
 
+          <div className="max-w-3xl mx-auto mb-8">
+            <p className="text-gray-400 text-center leading-relaxed">
+              SharedTask is a simple event planning and task coordination tool designed to replace chaotic group chats. Whether you&apos;re organizing a volunteer project, family reunion, camping trip, potluck, or team gathering, SharedTask makes it easy to track who&apos;s bringing what and who&apos;s doing what. Create a shareable link, invite your group, and watch everyone claim their tasks in real-time. No more missing deliveries, no more duplicate dishes, no more confusion. Start with our free plan or try Pro free for 14 days.
+            </p>
+          </div>
+
           <div className="flex flex-wrap justify-center gap-8 mb-8 text-gray-400">
             <a href="/about" className="hover:text-white transition-colors">About</a>
             <a href="/contact" className="hover:text-white transition-colors">Contact</a>
-            <a href="/privacy" className="hover:text-white transition-colors">Privacy</a>
+            <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
             <a href="/terms" className="hover:text-white transition-colors">Terms</a>
           </div>
 

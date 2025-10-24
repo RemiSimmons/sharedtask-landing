@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata = {
-  title: 'Terms of Service - SharedTask.ai',
-  description: 'Terms of Service for SharedTask.ai',
+  title: 'Terms of Service - SharedTask Usage Agreement',
+  description: 'Read SharedTask\'s Terms of Service. Learn about user responsibilities, free and paid plans, service availability, and our commitment to simple, fair terms.',
 };
 
 export default function TermsPage() {
@@ -32,7 +32,7 @@ export default function TermsPage() {
             </p>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Purpose</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Purpose</h2>
               <p>
                 SharedTask.ai helps users organize and manage group activities through shared task lists and links. 
                 The platform is meant for personal, community, and light business use.
@@ -40,7 +40,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">2. User Responsibilities</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">2. User Responsibilities</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>You agree to use SharedTask only for lawful, respectful purposes.</li>
                 <li>You are responsible for the content you add (such as event names, descriptions, and participant lists).</li>
@@ -49,7 +49,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">3. Accounts and Access</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Accounts and Access</h2>
               <p>
                 Most features do not require sign-up. If you choose to create an account or subscribe, 
                 you agree to provide accurate information and keep your credentials secure.
@@ -57,7 +57,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">4. Free and Paid Plans</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Free and Paid Plans</h2>
               <p>
                 You may use SharedTask for free or upgrade for additional features at a low monthly rate.<br />
                 Paid plans are managed through our secure payment processor (e.g., Stripe). Subscriptions can be canceled anytime.
@@ -65,7 +65,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">5. Service Availability</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Service Availability</h2>
               <p>
                 We aim for reliable, continuous operation but cannot guarantee uninterrupted access.<br />
                 We may update, suspend, or improve features at any time.
@@ -73,7 +73,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">6. Liability Disclaimer</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Liability Disclaimer</h2>
               <p>
                 SharedTask.ai is provided "as is." We are not responsible for losses or damages arising 
                 from use or inability to use the service.
@@ -81,7 +81,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">7. Intellectual Property</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Intellectual Property</h2>
               <p>
                 All trademarks, designs, and software related to SharedTask.ai belong to SharedTask LLC (or its founders). 
                 You may not reproduce or distribute them without permission.
@@ -89,14 +89,14 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">8. Termination</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Termination</h2>
               <p>
                 We reserve the right to suspend or terminate access for misuse or violation of these terms.
               </p>
             </section>
 
             <section>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">9. Contact</h3>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Contact</h2>
               <p>
                 For any questions about these terms, email{' '}
                 <a href="mailto:legal@sharedtask.ai" className="text-primary hover:underline font-semibold">

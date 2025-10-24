@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { ArrowLeft, Heart, Users, Lightbulb } from 'lucide-react';
 
 export const metadata = {
-  title: 'About - SharedTask.ai',
-  description: 'Learn about SharedTask.ai and our mission to simplify group planning',
+  title: 'About SharedTask - Our Mission to Simplify Event Planning',
+  description: 'Learn how SharedTask was created by event hosts frustrated with messy group chats. We built a simpler way to coordinate tasks, RSVPs, and volunteer events with one shareable link.',
 };
 
 export default function AboutPage() {
