@@ -5,13 +5,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'SharedTask - Stop Group Text Chaos | Simple Event Planning',
-  description: 'Organize events with one shareable link. Stop endless group texts. Host creates, shares link, everyone updates. Free 14-day trial.',
+  description: 'Simple event planning tool that stops group text chaos. Coordinate tasks, potlucks, and volunteers with one link. Free 14-day trial. No signup needed.',
   authors: [{ name: 'Remi Simmons', url: 'https://www.remisimmons.com' }],
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#4A90E2',
   openGraph: {
     title: 'SharedTask - Stop Group Text Chaos',
-    description: 'Organize events with one shareable link. Stop endless group texts.',
+    description: 'Simple event planning tool that stops group text chaos. Coordinate tasks, potlucks, and volunteers with one link. Free 14-day trial. No signup needed.',
     url: 'https://sharedtask.ai',
     siteName: 'SharedTask',
     images: [
@@ -28,7 +28,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'SharedTask - Stop Group Text Chaos',
-    description: 'Organize events with one shareable link. Stop endless group texts.',
+    description: 'Simple event planning tool that stops group text chaos. Coordinate tasks, potlucks, and volunteers with one link. Free 14-day trial. No signup needed.',
     images: ['https://sharedtask.ai/og-image.png'],
   },
   alternates: {
