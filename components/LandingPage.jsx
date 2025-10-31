@@ -363,9 +363,16 @@ export default function LandingPage() {
             ))}
           </div>
 
+          {/* Trustpilot Review Widget */}
+          <div className="max-w-3xl mx-auto mb-12">
+            <div className="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="690017623bbae18328e525d2" data-style-height="52px" data-style-width="100%" data-token="3cb75fba-3a38-46fb-84c6-63837276f647">
+              <a href="https://www.trustpilot.com/review/sharedtask.ai" target="_blank" rel="noopener">Trustpilot</a>
+            </div>
+          </div>
+
           {/* Use Case Badges */}
           <div className="flex flex-wrap justify-center gap-4">
-            {['Book Clubs', 'Potlucks', 'Volunteer Events', 'Family Reunions', 'Game Nights', 'Fundraisers'].map((useCase, index) => (
+            {['Book Clubs', 'Potlucks', 'Volunteer Events', 'Family Reunions', 'Game Nights', 'Fundraisers', 'Office Parties', 'Camping', 'Sports Team', 'Holiday Celebrations'].map((useCase, index) => (
               <div 
                 key={index}
                 className="bg-white border-2 border-gray-200 px-6 py-3 rounded-full text-lg font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors shadow-sm"
