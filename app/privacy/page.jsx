@@ -4,6 +4,24 @@ import { ArrowLeft } from 'lucide-react';
 export const metadata = {
   title: 'Privacy Policy - How SharedTask Protects Your Data',
   description: 'SharedTask respects your privacy. Learn how we collect, use, and protect your data. No invasive tracking, no selling personal information. Simple, transparent privacy practices.',
+  alternates: {
+    canonical: 'https://sharedtask.ai/privacy',
+  },
+  openGraph: {
+    title: 'Privacy Policy - SharedTask',
+    description: 'Learn how SharedTask protects your data with transparent privacy practices.',
+    url: 'https://sharedtask.ai/privacy',
+    siteName: 'SharedTask',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function PrivacyPage() {

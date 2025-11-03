@@ -4,6 +4,24 @@ import { ArrowLeft } from 'lucide-react';
 export const metadata = {
   title: 'Terms of Service - SharedTask Usage Agreement',
   description: 'Read SharedTask\'s Terms of Service. Learn about user responsibilities, free and paid plans, service availability, and our commitment to simple, fair terms.',
+  alternates: {
+    canonical: 'https://sharedtask.ai/terms',
+  },
+  openGraph: {
+    title: 'Terms of Service - SharedTask',
+    description: 'Read SharedTask\'s Terms of Service and usage agreement.',
+    url: 'https://sharedtask.ai/terms',
+    siteName: 'SharedTask',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function TermsPage() {

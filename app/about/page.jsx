@@ -4,6 +4,24 @@ import { ArrowLeft, Heart, Users, Lightbulb } from 'lucide-react';
 export const metadata = {
   title: 'About SharedTask - Our Mission to Simplify Event Planning',
   description: 'Learn how SharedTask was created by event hosts frustrated with messy group chats. We built a simpler way to coordinate tasks, RSVPs, and volunteer events with one shareable link.',
+  alternates: {
+    canonical: 'https://sharedtask.ai/about',
+  },
+  openGraph: {
+    title: 'About SharedTask - Our Mission',
+    description: 'Learn how SharedTask simplifies event planning with one shareable link.',
+    url: 'https://sharedtask.ai/about',
+    siteName: 'SharedTask',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function AboutPage() {
